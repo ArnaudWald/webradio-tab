@@ -1,0 +1,86 @@
+#audio-container {
+	width: 200px;
+	height: 200px;
+	background-image: url("fip.png");
+	background-size: contain;
+	border-radius:10px;
+	display: block;
+}
+
+body {
+	background: url(wallpaper.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+	padding-left : 150px;
+	padding-top : 150px;
+}
+
+#audio2-container {
+	width: 200px;
+	height: 200px;
+	background-image: url("fip_electro.png");
+	background-size: contain;
+	border-radius:10px;
+	display: block;
+}
+
+#audio {
+	display: none;
+}
+
+#audio2 {
+	display: none;
+}
+
+#audio-controls {
+	display: block;
+	margin:auto;
+	border-radius: 10px;
+	padding-top: 44px;
+	padding-left: 51px;
+	opacity: 0;
+	color: #FFF;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+	);
+}
+
+#audio2-controls {
+	display: block;
+	margin:auto;
+	border-radius: 10px;
+	padding-top: 44px;
+	padding-left: 51px;
+	opacity: 0;
+	color: #FFF;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+	);
+}
+
+#audio-container:hover #audio-controls {
+	opacity: .9;
+}
+#audio2-container:hover #audio2-controls {
+	opacity: .9;
+}
+button {
+	background: rgba(0,0,0,0.05);
+	margin: 10px;
+	height:100px;
+	color: #FFF;
+	width:100px;
+}
+
+button:hover {
+	cursor: pointer;
+}
