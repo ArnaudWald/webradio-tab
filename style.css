@@ -15,7 +15,7 @@ body {
 	background-size: cover;
 	
 	padding-left : 150px;
-	padding-top : 150px;
+	padding-top : 40px;
 }
 
 #audio2-container {
@@ -26,12 +26,23 @@ body {
 	border-radius:10px;
 	display: block;
 }
+#audio3-container {
+	width: 200px;
+	height: 200px;
+	background-image: url("fip_groove.png");
+	background-size: contain;
+	border-radius:10px;
+	display: block;
+}
 
 #audio {
 	display: none;
 }
 
 #audio2 {
+	display: none;
+}
+#audio3 {
 	display: none;
 }
 
@@ -66,11 +77,29 @@ body {
 	transition: opacity .3s;
 	);
 }
+#audio3-controls {
+	display: block;
+	margin:auto;
+	border-radius: 10px;
+	padding-top: 44px;
+	padding-left: 51px;
+	opacity: 0;
+	color: #FFF;
+	-webkit-transition: opacity .3s;
+	-moz-transition: opacity .3s;
+	-o-transition: opacity .3s;
+	-ms-transition: opacity .3s;
+	transition: opacity .3s;
+	);
+}
 
 #audio-container:hover #audio-controls {
 	opacity: .9;
 }
 #audio2-container:hover #audio2-controls {
+	opacity: .9;
+}
+#audio3-container:hover #audio3-controls {
 	opacity: .9;
 }
 button {
