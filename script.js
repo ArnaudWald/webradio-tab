@@ -1,5 +1,8 @@
 window.onload = function() {
 
+	// radio-title
+	var radio_title = document.getElementById("radio-title");
+
 	// audio
 	var audio = document.getElementById("audio");
 	var audio2 = document.getElementById("audio2");
@@ -22,6 +25,8 @@ window.onload = function() {
 			audio.play();
 			audio2.pause();
 			audio3.pause();
+			
+			radio_title.innerHTML = "Fip";
 
 			// Update the button text to 'Pause'
 			playButton.innerHTML = "<i class='fas fa-pause fa-7x'></i>";
@@ -32,6 +37,8 @@ window.onload = function() {
 			audio.pause();
 			audio2.pause();
 			audio3.pause();
+			
+			radio_title.innerHTML = "Nothing";
 
 			// Update the button text to 'Play'
 			playButton.innerHTML = "<i class='fas fa-play fa-7x'></i>";
@@ -44,6 +51,8 @@ window.onload = function() {
 			audio2.play();
 			audio.pause();
 			audio3.pause();
+			
+			radio_title.innerHTML = "Fip Electro";
 
 			// Update the button text to 'Pause'
 			playButton2.innerHTML = "<i class='fas fa-pause fa-7x'></i>";
@@ -54,6 +63,8 @@ window.onload = function() {
 			audio2.pause();
 			audio.pause();
 			audio3.pause();
+			
+			radio_title.innerHTML = "Nothing";
 
 			// Update the button text to 'Play'
 			playButton2.innerHTML = "<i class='fas fa-play fa-7x'></i>";
@@ -66,6 +77,8 @@ window.onload = function() {
 			audio3.play();
 			audio.pause();
 			audio2.pause();
+			
+			radio_title.innerHTML = "Fip Groove";
 
 			// Update the button text to 'Pause'
 			playButton3.innerHTML = "<i class='fas fa-pause fa-7x'></i>";
@@ -77,6 +90,8 @@ window.onload = function() {
 			audio.pause();
 			audio2.pause();
 
+			radio_title.innerHTML = "Nothing";
+			
 			// Update the button text to 'Play'
 			playButton3.innerHTML = "<i class='fas fa-play fa-7x'></i>";
 		}
