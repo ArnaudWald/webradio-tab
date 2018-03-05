@@ -38,7 +38,7 @@ window.onload = function() {
 			audio2.pause();
 			audio3.pause();
 			
-			radio_title.innerHTML = "Nothing";
+			radio_title.innerHTML = "";
 
 			// Update the button text to 'Play'
 			playButton.innerHTML = "<i class='fas fa-play fa-7x'></i>";
@@ -64,7 +64,7 @@ window.onload = function() {
 			audio.pause();
 			audio3.pause();
 			
-			radio_title.innerHTML = "Nothing";
+			radio_title.innerHTML = "";
 
 			// Update the button text to 'Play'
 			playButton2.innerHTML = "<i class='fas fa-play fa-7x'></i>";
@@ -90,7 +90,7 @@ window.onload = function() {
 			audio.pause();
 			audio2.pause();
 
-			radio_title.innerHTML = "Nothing";
+			radio_title.innerHTML = "";
 			
 			// Update the button text to 'Play'
 			playButton3.innerHTML = "<i class='fas fa-play fa-7x'></i>";
