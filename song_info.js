@@ -1,4 +1,7 @@
 window.onload = function() {
+
+	audio_controls()
+
 	function toTitleCase(str)
 	{
 	    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -43,9 +46,6 @@ window.onload = function() {
 				var song = data["steps"][songStep];
 
 				showSongInfo(song);
-				console.log(song);
-
-        console.log(data['stationId']);
       });
     }
   )

@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Circular";
+		src: url("fonts/CircularStd-Book.otf");
+}
+
 body {
 	background: url(wallpaper.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -11,6 +16,8 @@ body {
 
 p{
 	color: #FFF;
+	font-family: Circular;
+	font-size: 0.95em;
 }
 
 img{

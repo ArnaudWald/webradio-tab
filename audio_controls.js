@@ -1,4 +1,4 @@
-window.onload = function() {
+audio_controls = function() {
 
 	// radio-title
 	var radio_title = document.getElementById("radio-title");
