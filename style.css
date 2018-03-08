@@ -1,6 +1,10 @@
 @font-face {
-	font-family: "Circular";
+	font-family: "Circular-Normal";
 		src: url("fonts/CircularStd-Book.otf");
+}
+@font-face {
+	font-family: "Circular-Bold";
+		src: url("fonts/CircularStd-Bold.otf");
 }
 
 body {
@@ -14,10 +18,16 @@ body {
 	padding-top : 10px;
 }
 
+span{
+	color: white;
+	font-family: Circular-Normal;
+	font-size: medium;
+}
+
 p{
-	color: #FFF;
-	font-family: Circular;
-	font-size: 0.95em;
+	color: gray;
+	font-family: Circular-Bold;
+	font-size: 0.9em;
 }
 
 img{
@@ -27,8 +37,8 @@ img{
 }
 
 div{
-	width: 200px;
-	height: 200px;
+	width: 150px;
+	height: 150px;
 	background-size: contain;
 	border-radius:10px;
 	display: inline-block;
@@ -106,13 +116,6 @@ audio {
 	opacity: .9;
 }
 
-button {
-	background: rgba(0,0,0,0.05);
-	margin: 10px;
-	height:100px;
-	color: #FFF;
-	width:100px;
-}
 
 button:hover {
 	cursor: pointer;
@@ -123,9 +126,8 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.4);
     color: white;
-    text-align: center;
 }
 p {
 	margin: 0px;
