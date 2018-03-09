@@ -28,16 +28,14 @@ window.onload = function() {
 		var artiste = document.getElementById("artiste");
 		var album = document.getElementById("album");
 		var year = document.getElementById("year");
-		var label = document.getElementById("label");
 		var cover = document.getElementById("cover");
 
 		songName.innerHTML = toTitleCase(song["title"]);
 		artiste.innerHTML = toTitleCase(song["authors"]);
 		album.innerHTML = toTitleCase(song["titreAlbum"]);
-		year.innerHTML = song["anneeEditionMusique"];
-		label.innerHTML = toTitleCase(song["label"]);
+		year.innerHTML = " (" + song["anneeEditionMusique"] + ")";
 
-		cover.src = song["visual"];
+		cover.style.backgroundImage = "url(" + song["visual"] + ")";
 
 	}
 
