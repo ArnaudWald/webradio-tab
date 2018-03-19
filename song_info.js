@@ -80,44 +80,22 @@ window.onload = function() {
 
 	}
 
+	function handleStations(station) {
+		if (audio.paused == true || playingStation != station) {
+			// Play the audio
+			playingStation = station;
+			playAudio(playingStation);
+
+		} else {
+			pauseAudio();
+		}
+	}
+
 	audio_controls = function() {
-
-
-
 		// Event listener for the play/pause button
-		container.addEventListener("click", function() {
-			if (audio.paused == true || playingStation != "fip-paris") {
-				// Play the audio
-				playingStation = "fip-paris";
-				playAudio(playingStation);
-
-
-			} else {
-				pauseAudio();
-			}
-		});
-
-		container2.addEventListener("click", function() {
-			if (audio.paused == true || playingStation != "theme-electro") {
-				// Play the audio
-				playingStation = "theme-electro";
-				playAudio(playingStation);
-
-			} else {
-				pauseAudio();
-			}
-		});
-
-		container3.addEventListener("click", function() {
-			if (audio.paused == true || playingStation != "theme-groove") {
-				// Play the audio
-				playingStation = "theme-groove";
-				playAudio(playingStation);
-
-			} else {
-				pauseAudio();
-			}
-		});
+		container.addEventListener("click", function(){handleStations("fip-paris")});
+		container2.addEventListener("click", function(){handleStations("theme-electro")});
+		container3.addEventListener("click", function(){handleStations("theme-groove")});
 
 		document.body.onkeyup = function(e){
     	if(e.keyCode == 32){
@@ -169,4 +147,7 @@ window.onload = function() {
 	}
 
 	audio_controls();
+
+	setInterval(function(){getSongInfo(playingStation)}, 2*1000); // 1000 millisecs
+
 }
