@@ -39,15 +39,16 @@ window.onload = function() {
 
 	}
 
-	function pauseAudio (buttonID) {
+	function pauseAudio () {
 		// Pause the audio
 		audio.pause();
-		playingStation = "";
 
 		radio_title.innerHTML = "en pause";
 
 		// Update the button text to 'Play'
-		buttonID.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton2.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton3.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 	}
 
 	function playAudio (stationName) {
@@ -59,6 +60,24 @@ window.onload = function() {
 		getSongInfo(stationName);
 
 		radio_title.innerHTML = stations[stationName]["name"];
+
+
+		// Update the button text to 'Pause'
+		playButton.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton2.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton3.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+
+		if (stationName == "fip-paris"){
+			playButton.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+
+		} else if (stationName == "theme-electro") {
+			playButton2.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+
+		} else if (stationName == "theme-groove") {
+			playButton3.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+
+		}
+
 	}
 
 	audio_controls = function() {
@@ -72,12 +91,9 @@ window.onload = function() {
 				playingStation = "fip-paris";
 				playAudio(playingStation);
 
-				// Update the button text to 'Pause'
-				playButton.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
-				playButton2.innerHTML = "<i class='fas fa-play fa-6x'></i>";
-				playButton3.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+
 			} else {
-				pauseAudio(playButton);
+				pauseAudio();
 			}
 		});
 
@@ -87,12 +103,8 @@ window.onload = function() {
 				playingStation = "theme-electro";
 				playAudio(playingStation);
 
-				// Update the button text to 'Pause'
-				playButton2.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
-				playButton.innerHTML = "<i class='fas fa-play fa-6x'></i>";
-				playButton3.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 			} else {
-				pauseAudio(playButton2);
+				pauseAudio();
 			}
 		});
 
@@ -102,14 +114,20 @@ window.onload = function() {
 				playingStation = "theme-groove";
 				playAudio(playingStation);
 
-				// Update the button text to 'Pause'
-				playButton3.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
-				playButton.innerHTML = "<i class='fas fa-play fa-6x'></i>";
-				playButton2.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 			} else {
-				pauseAudio(playButton3);
+				pauseAudio();
 			}
 		});
+
+		document.body.onkeyup = function(e){
+    	if(e.keyCode == 32){
+        if (audio.paused == false) {
+					pauseAudio();
+				} else {
+					playAudio(playingStation);
+				}
+    	}
+		}
 	}
 
 
