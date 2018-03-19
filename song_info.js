@@ -119,7 +119,11 @@ window.onload = function() {
 		var stationId = document.getElementById("stationId");
 		var song_info;
 
-		fetch(url, {method: 'get'})
+		var header = new Headers({
+    'Access-Control-Allow-Origin':'*'
+		});
+
+		fetch(url, {method: 'get', mode:'cors', header:header})
 	  .then(
 	    function(response) {
 	      if (response.status !== 200) {

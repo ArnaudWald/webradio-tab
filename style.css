@@ -62,43 +62,14 @@ audio {
 	display: none;
 }
 
-#audio-controls {
+#audio-controls, #audio2-controls, #audio3-controls {
+	height: 96px;
+	width: 84px;
 	display: block;
-	margin:auto;
+	margin:0px;
 	border-radius: 10px;
-	padding-top: 44px;
-	padding-left: 51px;
-	opacity: 0;
-	color: #FFF;
-	-webkit-transition: opacity .3s;
-	-moz-transition: opacity .3s;
-	-o-transition: opacity .3s;
-	-ms-transition: opacity .3s;
-	transition: opacity .3s;
-	);
-}
-
-#audio2-controls {
-	display: block;
-	margin:auto;
-	border-radius: 10px;
-	padding-top: 44px;
-	padding-left: 51px;
-	opacity: 0;
-	color: #FFF;
-	-webkit-transition: opacity .3s;
-	-moz-transition: opacity .3s;
-	-o-transition: opacity .3s;
-	-ms-transition: opacity .3s;
-	transition: opacity .3s;
-	);
-}
-#audio3-controls {
-	display: block;
-	margin:auto;
-	border-radius: 10px;
-	padding-top: 44px;
-	padding-left: 51px;
+	padding-top: 27px;
+	padding-left: 33px;
 	opacity: 0;
 	color: #FFF;
 	-webkit-transition: opacity .3s;
