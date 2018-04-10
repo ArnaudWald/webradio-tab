@@ -3,11 +3,11 @@ An effective way to listen to my favorite webradio (which is Fip) from a browser
 
 
 # ToDo
-- Add more webradios, like :
-  - Other FIP channels
-  - Other radios
-  
+- Add other radios than FIP
+
 - Volume control
+
+(DONE) Other FIP channels
 
 (DONE) Retrieve song properties (title, artist, cover image) and show it somewhere
 
