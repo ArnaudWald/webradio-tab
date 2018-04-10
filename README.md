@@ -8,8 +8,8 @@ An effective way to listen to my favorite webradio (which is Fip) from a browser
   - Other radios
   
 - Volume control
-- Retrieve song properties (title, artist, cover image) and show it somewhere
 
+(DONE) Retrieve song properties (title, artist, cover image) and show it somewhere
 (DONE) Only one audio object, and the script changes the source URL 
 
 # Running
