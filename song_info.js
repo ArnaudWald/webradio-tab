@@ -7,8 +7,8 @@ window.onload = function() {
 	var audio_source = document.getElementById("audio-source");
 
 	// Buttons
-	var container = document.getElementById("audio-container");
-	var playButton = document.getElementById("audio-controls");
+	var container1 = document.getElementById("audio1-container");
+	var playButton1 = document.getElementById("audio1-controls");
 
 	var container2 = document.getElementById("audio2-container");
 	var playButton2 = document.getElementById("audio2-controls");
@@ -16,10 +16,24 @@ window.onload = function() {
 	var container3 = document.getElementById("audio3-container");
 	var playButton3 = document.getElementById("audio3-controls");
 
+	var container4 = document.getElementById("audio4-container");
+	var playButton4 = document.getElementById("audio4-controls");
+
+	var container5 = document.getElementById("audio5-container");
+	var playButton5 = document.getElementById("audio5-controls");
+
+	var container6 = document.getElementById("audio6-container");
+	var playButton6 = document.getElementById("audio6-controls");
+
+	var container7 = document.getElementById("audio7-container");
+	var playButton7 = document.getElementById("audio7-controls");
+
+	var container8 = document.getElementById("audio8-container");
+	var playButton8 = document.getElementById("audio8-controls");
+
 	var playingStation = "";
 
-	function toTitleCase(str)
-	{
+	function toTitleCase(str)	{
 	    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 	}
 
@@ -46,9 +60,14 @@ window.onload = function() {
 		radio_title.innerHTML = "en pause";
 
 		// Update the button text to 'Play'
-		playButton.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton1.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 		playButton2.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 		playButton3.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton4.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton5.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton6.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton7.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton8.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 	}
 
 	function playAudio (stationName) {
@@ -63,19 +82,38 @@ window.onload = function() {
 
 
 		// Update the button text to 'Pause'
-		playButton.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton1.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 		playButton2.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 		playButton3.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton4.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton5.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton6.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton7.innerHTML = "<i class='fas fa-play fa-6x'></i>";
+		playButton8.innerHTML = "<i class='fas fa-play fa-6x'></i>";
 
-		if (stationName == "fip-paris"){
-			playButton.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
-
-		} else if (stationName == "theme-electro") {
+		if (stationName == "fip-paris") {
+			playButton1.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+		}
+		else if (stationName == "theme-electro") {
 			playButton2.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
-
-		} else if (stationName == "theme-groove") {
+		}
+		else if (stationName == "theme-groove") {
 			playButton3.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
-
+		}
+		else if (stationName == "theme-rock") {
+			playButton4.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+		}
+		else if (stationName == "theme-jazz") {
+			playButton5.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+		}
+		else if (stationName == "theme-nouveau") {
+			playButton6.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+		}
+		else if (stationName == "theme-reggae") {
+			playButton7.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
+		}
+		else if (stationName == "theme-monde") {
+			playButton8.innerHTML = "<i class='fas fa-pause fa-6x'></i>";
 		}
 
 	}
@@ -93,9 +131,14 @@ window.onload = function() {
 
 	audio_controls = function() {
 		// Event listener for the play/pause button
-		container.addEventListener("click", function(){handleStations("fip-paris")});
+		container1.addEventListener("click", function(){handleStations("fip-paris")});
 		container2.addEventListener("click", function(){handleStations("theme-electro")});
 		container3.addEventListener("click", function(){handleStations("theme-groove")});
+		container4.addEventListener("click", function(){handleStations("theme-rock")});
+		container5.addEventListener("click", function(){handleStations("theme-jazz")});
+		container6.addEventListener("click", function(){handleStations("theme-nouveau")});
+		container7.addEventListener("click", function(){handleStations("theme-reggae")});
+		container8.addEventListener("click", function(){handleStations("theme-monde")});
 
 		document.body.onkeyup = function(e){
     	if(e.keyCode == 32){

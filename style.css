@@ -8,7 +8,7 @@
 }
 
 body {
-	background: url(wallpaper.jpg) no-repeat center center fixed;
+	background: url("img/wallpaper.jpg") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -36,7 +36,7 @@ p{
 	width: 150px;
 	height: 150px;
 	display: inline-block;
-	background-image: url("black.png");
+	background-image: url("img/black.png");
 }
 
 div{
@@ -48,21 +48,36 @@ div{
 	margin : 10px;
 }
 
-#audio-container {
-	background-image: url("fip.png");
+#audio1-container {
+	background-image: url("img/fip.png");
 }
 #audio2-container {
-	background-image: url("fip_electro.png");
+	background-image: url("img/fip_electro.png");
 }
 #audio3-container {
-	background-image: url("fip_groove.png");
+	background-image: url("img/fip_groove.png");
+}
+#audio4-container {
+	background-image: url("img/fip_rock.png");
+}
+#audio5-container {
+	background-image: url("img/fip_jazz.png");
+}
+#audio6-container {
+	background-image: url("img/fip_nouveau.png");
+}
+#audio7-container {
+	background-image: url("img/fip_reggae.png");
+}
+#audio8-container {
+	background-image: url("img/fip_monde.png");
 }
 
 audio {
 	display: none;
 }
 
-#audio-controls, #audio2-controls, #audio3-controls {
+#audio1-controls, #audio2-controls, #audio3-controls, #audio4-controls, #audio5-controls, #audio6-controls, #audio7-controls, #audio8-controls {
 	height: 96px;
 	width: 84px;
 	display: block;
@@ -80,13 +95,28 @@ audio {
 	);
 }
 
-#audio-container:hover #audio-controls {
+#audio1-container:hover #audio1-controls {
 	opacity: .9;
 }
 #audio2-container:hover #audio2-controls {
 	opacity: .9;
 }
 #audio3-container:hover #audio3-controls {
+	opacity: .9;
+}
+#audio4-container:hover #audio4-controls {
+	opacity: .9;
+}
+#audio5-container:hover #audio5-controls {
+	opacity: .9;
+}
+#audio6-container:hover #audio6-controls {
+	opacity: .9;
+}
+#audio7-container:hover #audio7-controls {
+	opacity: .9;
+}
+#audio8-container:hover #audio8-controls {
 	opacity: .9;
 }
 
