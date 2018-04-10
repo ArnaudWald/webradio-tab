@@ -3,15 +3,15 @@ An effective way to listen to my favorite webradio (which is Fip) from a browser
 
 
 # ToDo
-- Add other radios than FIP
+- [ ] Add other radios than FIP
 
-- Volume control
+- [ ] Volume control
 
-(DONE) Other FIP channels
+- [x] Other FIP channels
 
-(DONE) Retrieve song properties (title, artist, cover image) and show it somewhere
+- [x] Retrieve song properties (title, artist, cover image) and show it somewhere
 
-(DONE) Only one audio object, and the script changes the source URL 
+- [x] Only one audio object, and the script changes the source URL 
 
 # Running
 Simply open the main HTML file in a browser tab, an play the radio of your choice !
