@@ -7,6 +7,12 @@ An effective way to listen to my favorite webradio (which is Fip) from a browser
 
 - [ ] Volume control
 
+- [ ] Avoid manual copy/paste for html and JS, which is a source of errors
+
+- [ ] Improve the UI
+
+- [x] Spacebar pause
+
 - [x] Other FIP channels
 
 - [x] Retrieve song properties (title, artist, cover image) and show it somewhere
